@@ -1,0 +1,35 @@
+[0;34m  START OF EXPERIMENT[0m exp: experiment4.007, timestamp: 2017-03-19-04:13:25
+
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0d11927714081b75 shell su -c "nexutil -s640 -i -v0xd074"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0d11927714081b75 shell su -c "nexutil -s641 -i -v110"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c shell su -c "nexutil -s610 -i -v0xd074"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c shell su -c "export LD_PRELOAD=libfakeioctl.so && nohup tcpdump -i wlan0 -w /sdcard/capture.pcap > /sdcard/tcpdump.log 2>/sdcard/tcpdump.err &"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0cfe89f0140821fc shell su -c "nexutil -s621 -i -v0xd074"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+
+[0;31m  START WAITING[0m for 1350 seconds, timestamp: 2017-03-19-04:13:37
+
+[0;31m  END WAITING[0m timestamp: 2017-03-19-04:36:07
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c shell su -c "killall tcpdump | true"
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c pull /sdcard/capture.pcap /lede/experiments_wisec2017/experiment4.007/S/capture.pcap
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c pull /sdcard/tcpdump.log /lede/experiments_wisec2017/experiment4.007/S/tcpdump.log
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+make[1]: Entering directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+adb -H 192.168.2.231 -s 0af54d590299813c pull /sdcard/tcpdump.err /lede/experiments_wisec2017/experiment4.007/S/tcpdump.err
+make[1]: Leaving directory `/nexmon/nexmon/patches/bcm4339/6_37_34_43/tone_transmission'
+
+[0;34m  END OF EXPERIMENT[0m exp: experiment4.007, timestamp: 2017-03-19-04:36:27
