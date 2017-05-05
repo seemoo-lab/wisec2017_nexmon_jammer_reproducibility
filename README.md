@@ -7,5 +7,5 @@ Adaptive Power Control". As WiSec offers a reproducibility label, we use this
 repository to make all our measured data sets as well as the MATLAB scripts 
 to evaluate them and create plots for the paper available to the public. 
 Sharing these data should not only ease reproducibility, it should also 
-allow fellow researchers to get started with our code and build their own 
+allow fellow researchers to get started with our code and base their own 
 research on it.
