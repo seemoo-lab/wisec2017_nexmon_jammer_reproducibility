@@ -21,8 +21,7 @@ execute our precompiled binaries on a 64-Bit Linux system.
 
 1. Start MATLAB and navigate to the root directory of this repository.
 2. Execute the `setup.m` file to add some directories to the path.
-3. Navigate to the subdirectory of the figure you want to build and
-   execute the corresponding `make_figureX.m` file.
+3. Navigate to the subdirectory of the figure you want to build and execute the corresponding `make_figureX.m` file.
 
 ## Execute Linux binaries with MATLAB Runtime
 
@@ -33,5 +32,4 @@ export MCR_ROOT=/usr/local/MATLAB/MATLAB_Runtime
 export XAPPLRESDIR=${MCR_ROOT}/v91/X11/app-defaults
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${MCR_ROOT}/v91/runtime/glnxa64:${MCR_ROOT}/v91/bin/glnxa64:${MCR_ROOT}/v91/sys/os/glnxa64:${MCR_ROOT}/v91/sys/opengl/lib/glnxa64
 ```
-3. Navigate to the subdirectory of the figure you want to build and
-   execute the `make_figureX` binary.
+3. Navigate to the subdirectory of the figure you want to build and execute the `make_figureX` binary.
