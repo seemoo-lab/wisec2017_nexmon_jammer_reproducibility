@@ -1,0 +1,4 @@
+tcpdump: listening on wlan0, link-type IEEE802_11_RADIO (802.11 plus radiotap header), capture size 262144 bytes
+138387 packets captured
+138500 packets received by filter
+113 packets dropped by kernel
