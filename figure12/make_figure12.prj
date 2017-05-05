@@ -1,0 +1,156 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3519176865" file="/home/seemoo/reproducibility_label/figure12/make_figure12.prj" location="/home/seemoo/reproducibility_label/figure12" name="make_figure12" preferred-package-location="/home/seemoo/reproducibility_label/figure12/make_figure12_prj/for_redistribution" preferred-package-type="package.type.install" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>make_figure12</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Matthias Schulz</param.authnamewatermark>
+    <param.email>mschulz@seemoo.tu-darmstadt.de</param.email>
+    <param.company>Secure Mobile Networking Lab (SEEMOO)</param.company>
+    <param.summary>Creates Figure 12 of our WiSec 2017 paper.</param.summary>
+    <param.description>UDP throughputs with two streams sent by one node using UDP ports 3939 and 4040. Without jamming, the throughput splits evenly, using the Reactive Jammer kills the whole throughput, while the Acknowledging and Adaptive Power Control Jammers still allow communication.</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/Secure_Mobile_Networking_Lab_(SEEMOO)/make_figure12/</param.installpath.string>
+    <param.installpath.combo>option.installpath.user</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MCR_ROOT by the directory where the MATLAB Runtime is installed on the target machine.
+
+(1) Set the environment variable XAPPLRESDIR to this value:
+
+    MCR_ROOT/v91/X11/app-defaults
+
+
+(2) If the environment variable LD_LIBRARY_PATH is undefined, set it to the concatenation of the following strings:
+
+    MCR_ROOT/v91/runtime/glnxa64:
+    MCR_ROOT/v91/bin/glnxa64:
+    MCR_ROOT/v91/sys/os/glnxa64:
+    MCR_ROOT/v91/sys/opengl/lib/glnxa64
+
+    If it is defined, set it to the concatenation of these strings:
+
+    ${LD_LIBRARY_PATH}: 
+    MCR_ROOT/v91/runtime/glnxa64:
+    MCR_ROOT/v91/bin/glnxa64:
+    MCR_ROOT/v91/sys/os/glnxa64:
+    MCR_ROOT/v91/sys/opengl/lib/glnxa64</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/make_figure12_prj/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/make_figure12_prj/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/make_figure12_prj/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/make_figure12_prj</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/make_figure12.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/m2tInputParser.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/matlab2tikz.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/errorUnknownEnvironment.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/getEnvironment.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/guitypes.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/isAxis3D.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/isVersionBelow.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/m2tUpdater.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/m2tstrjoin.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/versionArray.m</file>
+      <file>/home/seemoo/reproducibility_label/matlab2tikz/private/versionString.m</file>
+      <file>/home/seemoo/reproducibility_label/readpcap/readpcap.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/make_figure12_prj/for_testing" name="readme.txt" optional="true">/home/seemoo/reproducibility_label/figure12/make_figure12_prj/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/make_figure12_prj/for_testing" name="make_figure12" optional="false">/home/seemoo/reproducibility_label/figure12/make_figure12_prj/for_testing/make_figure12</file>
+      <file location="${PROJECT_ROOT}/make_figure12_prj/for_testing" name="splash.png" optional="false">/home/seemoo/reproducibility_label/figure12/make_figure12_prj/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/make_figure12_prj/for_testing" name="run_make_figure12.sh" optional="false">/home/seemoo/reproducibility_label/figure12/make_figure12_prj/for_testing/run_make_figure12.sh</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2016b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.2.0-42-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
