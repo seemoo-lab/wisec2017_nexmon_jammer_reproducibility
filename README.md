@@ -102,7 +102,18 @@ adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EX
 
 ## Generating the experiment_2.mat file
 
-To create experiment_2.mat, we need to connect one Nexus 5 to a Monsoon Power Monitor
-according to the
+The file experiment_2.mat is the result of converting an experiment_2.csv file using 
+MATLAB:
+```
+experiment_2 = csvread('experiment_2.csv',2,1);
+save('experiment_2.mat','experiment_2','-v7.3');
+```
+The experiment_2.csv file itself is an export of the PowerTool (version 4.0.5.2)
+that we used to perform measurements with the Monsoon Power Monitor. After the 
+conversion we deleted the csv-file as it contains the same raw data as the mat-file 
+but the mat-file has a much smaller file size.
+
+To perform the measurement, connect one Nexus 5 to a Monsoon Power Monitor according 
+to the
 "[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
 manual.
