@@ -151,9 +151,10 @@ repository and build a new boot.img for booting over adb or for flashing.
 To start the experiment on the phone, you need to recompile the firmware with the
 additional parameter that sets EXPERIMENT to 2. Therefore, navigate to the 
 wisec2017_nexmon_jammer directory in your nexmon development tree and run
-`make install-firmware EXPERIMENT=2`. This will activate the execution of the code in
-experiment2.c by the autostart.c file. The experiment starts after 20 seconds after
-loading the firmware.
+`make clean && make install-firmware EXPERIMENT=2` (whenever you change the value of
+EXPERIMENT, you need to run a `make clean` in advance). This will activate the 
+execution of the code in experiment2.c by the autostart.c file. The experiment starts 
+after 20 seconds after loading the firmware.
 
 To perform the power consumption measurement, you should directly activate the signal
 capture in the PowerTool program. This cuts the USB connection to the phone which 
