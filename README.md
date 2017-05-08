@@ -148,3 +148,18 @@ measurement experiments, you can clone our
 [nexmon_energy_measurement](https://github.com/seemoo-lab/nexmon_energy_measurement)
 repository and build a new boot.img for booting over adb or for flashing.
 
+To start the experiment on the phone, you need to recompile the firmware with the
+additional parameter that sets EXPERIMENT to 2. Therefore, navigate to the 
+wisec2017_nexmon_jammer directory in your nexmon development tree and run
+`make install-firmware EXPERIMENT=2`. This will activate the execution of the code in
+experiment2.c by the autostart.c file. The experiment starts after 20 seconds after
+loading the firmware.
+
+To perform the power consumption measurement, you should directly activate the signal
+capture in the PowerTool program. This cuts the USB connection to the phone which 
+automatically lets the screen turn on. Simply press the power button to turn off the 
+screen and observe in the PowerTool how the power reduces to a minimal almost constant 
+power consumption. As soon as the experiments start on the phone you can see a raise
+in power consumption. After all experiments are done, stop the capture and export the
+data as csv-file so that it can be read by MATLAB to produce the mat-file, as described
+above.
