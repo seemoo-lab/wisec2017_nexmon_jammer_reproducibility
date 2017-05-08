@@ -26,7 +26,7 @@ execute our precompiled binaries on a 64-Bit Linux system.
 ## Execute Linux binaries with MATLAB Runtime
 
 1. Install MATLAB Runtime version 9.1 (R2016b).
-2. Export the following environment variables:
+2. Export the following environment variables (ŷou can do this by executing `source setup_env.sh` in the repository's source directory.):
 ```
 export MCR_ROOT=/usr/local/MATLAB/MATLAB_Runtime
 export XAPPLRESDIR=${MCR_ROOT}/v91/X11/app-defaults
