@@ -153,7 +153,7 @@ additional parameter that sets EXPERIMENT to 2. Therefore, navigate to the
 wisec2017_nexmon_jammer directory in your nexmon development tree and run
 `make clean && make install-firmware EXPERIMENT=2` (whenever you change the value of
 EXPERIMENT, you need to run a `make clean` in advance). This will activate the 
-execution of the code in experiment2.c by the autostart.c file. The experiment starts 
+execution of the code in experiment_2.c by the autostart.c file. The experiment starts 
 after 20 seconds after loading the firmware.
 
 To perform the power consumption measurement, you should directly activate the signal
