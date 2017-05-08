@@ -116,4 +116,9 @@ but the mat-file has a much smaller file size.
 To perform the measurement, connect one Nexus 5 to a Monsoon Power Monitor according 
 to the
 "[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
-manual.
+manual. To keep the voltage drop over the supply lines low, we intend to keep the 
+drawn current low by setting the supply voltage of the power monitor to 4.2 volts.
+During our measurements we then capture the power consumption as a product of voltage
+and current at a sampling rate of 5 kHz. We export the result into the experiment_2.csv
+file mentioned above.
+
