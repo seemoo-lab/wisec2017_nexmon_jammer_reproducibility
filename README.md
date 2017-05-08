@@ -10,7 +10,7 @@ Sharing these data should not only ease reproducibility, it should also
 allow fellow researchers to get started with our code and base their own 
 research on it.
 
-# How do I run your scripts to rebuild the graphics of your paper?
+# How do I run your scripts to rebuild the graphics of the paper?
 
 To run our scripts, you have two options, either you have a MATLAB license
 (we used version R2016b) and can directly execute the m-files, or you can use
