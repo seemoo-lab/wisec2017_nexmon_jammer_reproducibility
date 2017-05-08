@@ -134,6 +134,17 @@ to the
 manual. To keep the voltage drop over the supply lines low, we intend to keep the 
 drawn current low by setting the supply voltage of the power monitor to 4.2 volts.
 During our measurements we then capture the power consumption as a product of voltage
-and current at a sampling rate of 5 kHz. We export the result into the experiment_2.csv
+and current at a sampling rate of 5 kHz. We export the results into the experiment_2.csv
 file mentioned above.
+
+Even though we measure the energy consumption of the complete phone in this setup, we
+intend to focus on the energy consumption of the Wi-Fi chip. To be able to measure
+its energy consumption, we turn the phones display off and wait until the main processor
+of the smartphone goes into idle mode. In this mode the energy consumption is almost 
+constantly low, except of periodic peaks every 640 milliseconds. We realized that those 
+peaks can be avoided by turning off the CONFIG_MSM_SMD_PKT setting in the kernel, which 
+disables the LTE related hardware. To rebuild the kernel we used for our energy
+measurement experiments, you can clone our
+[nexmon_energy_measurement](https://github.com/seemoo-lab/nexmon_energy_measurement)
+repository and build a new boot.img for booting over adb or for flashing.
 
