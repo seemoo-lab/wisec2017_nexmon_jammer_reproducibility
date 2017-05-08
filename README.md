@@ -26,7 +26,7 @@ execute our precompiled binaries on a 64-Bit Linux system.
 ## Execute Linux binaries with MATLAB Runtime
 
 1. Install MATLAB Runtime version 9.1 (R2016b).
-2. Export the following environment variables (ŷou can do this by executing `source setup_env.sh` in the repository's source directory.):
+2. Export the following environment variables (you can do this by executing `source setup_env.sh` in the repository's source directory.):
 ```
 export MCR_ROOT=/usr/local/MATLAB/MATLAB_Runtime
 export XAPPLRESDIR=${MCR_ROOT}/v91/X11/app-defaults
@@ -36,7 +36,7 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${MCR_ROOT}/v91/runtime/glnxa64:${MCR_
 
 # How to reproduce the measurement results?
 
-To reproduce the measurement results, you need three Nexus 5 smartphones 
+To reproduce the measurement results, you need four Nexus 5 smartphones 
 running stock firmware version 6.0.1 (M4B30Z, Dec 2016). To root the phones
 we used TWRP version 3.0.3 as recovery image and SuperSU version 2.79 to 
 install the su binary. In the simplest setup, you can directly connect these
@@ -44,4 +44,12 @@ phones to a computer running the [nexmon](https://nexmon.org) firmware patching
 framework including the external 
 [nexmon_jammer](https://github.com/seemoo-lab/wisec2017_nexmon_jammer) patch.
 To learn how to setup the nexmon environment, follow the "Getting started"
-instructions from the readme of the nexmon_jammer repository.
+instructions from the readme of the nexmon_jammer repository. To also repeat 
+the energy measurements, you need to connect one of the Nexus 5 smartphones
+to a [Monsoon Power Monitor](https://www.msoon.com/LabEquipment/PowerMonitor/).
+At the time of writing the WiSec paper, the power monitor had to be connected
+to a Windows machine to collect the measurements.
+
+In the following subsections, we explain how every dataset can be collected.
+
+
