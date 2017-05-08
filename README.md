@@ -67,22 +67,22 @@ the m-files, run the following commands on a computer connected to a Nexus 5
 smartphone running the nexmon_jammer firmware:
 
 ``` 	
-  adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP0.m
-	adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP1.m
-	adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP2.m
-	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP0.m
-	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP1.m
-	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP2.m
-	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP0.m
-	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP1.m
-	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP2.m
-	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP0.m
-	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP1.m
-	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP2.m
-	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP0.m
-	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP1.m
-	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP2.m
-	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP0.m
-	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP1.m
-	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP2.m
+adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP0.m
+adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP1.m
+adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP2.m
+adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP0.m
+adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP1.m
+adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP2.m
+adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP0.m
+adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP1.m
+adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP2.m
+adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP0.m
+adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP1.m
+adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP2.m
+adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP0.m
+adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP1.m
+adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP2.m
+adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP0.m
+adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP1.m
+adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP2.m
 ```
