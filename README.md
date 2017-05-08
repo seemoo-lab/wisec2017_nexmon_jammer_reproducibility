@@ -52,4 +52,37 @@ to a Windows machine to collect the measurements.
 
 In the following subsections, we explain how every dataset can be collected.
 
+## Generating tssi_g70X_CHX_X0MHz_EXPX.m files
 
+To generate tssi_g70X_CHX_X0MHz_EXPX.m files used for creating Figures 3 and 4
+of the paper, nexutil is used to call the ioctls with numbers 700 to 705 and 
+dump the results into the corresponding m-files. The handling of the ioctls is 
+done in the
+[ioctl_7xx.c](https://github.com/seemoo-lab/wisec2017_nexmon_jammer/blob/master/src/ioctl_7xx.c#L59)
+file of the nexmon_jammer project. According to the ioctl numbers, different
+channel specifications (channel number and bandwidth) are selected. Then we
+trigger the generation and transmission of a test tone for measuring the 
+transmit signal strength indicator (TSSI) and dump the result. To generate
+the m-files, run the following commands on a computer connected to a Nexus 5
+smartphone running the nexmon_jammer firmware:
+
+``` 	
+  adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP0.m
+	adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP1.m
+	adb shell su -c "nexutil -g700 -l8196 -r" | strings > tssi_g700_CH7_20MHz_EXP2.m
+	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP0.m
+	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP1.m
+	adb shell su -c "nexutil -g701 -l8196 -r" | strings > tssi_g701_CH7_40MHz_L_EXP2.m
+	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP0.m
+	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP1.m
+	adb shell su -c "nexutil -g702 -l8196 -r" | strings > tssi_g702_CH7_80MHz_L_EXP2.m
+	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP0.m
+	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP1.m
+	adb shell su -c "nexutil -g703 -l8196 -r" | strings > tssi_g703_CH106_20MHz_EXP2.m
+	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP0.m
+	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP1.m
+	adb shell su -c "nexutil -g704 -l8196 -r" | strings > tssi_g704_CH106_40MHz_L_EXP2.m
+	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP0.m
+	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP1.m
+	adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP2.m
+```
