@@ -10,6 +10,21 @@ Sharing these data should not only ease reproducibility, it should also
 allow fellow researchers to get started with our code and base their own 
 research on it.
 
+# Extract from our License
+
+Any use of the Software which results in an academic publication or
+other publication which includes a bibliography must include
+citations to the nexmon project (1) and the paper cited under (2):
+
+1. "Matthias Schulz, Daniel Wegemer and Matthias Hollick. Nexmon:
+    The C-based Firmware Patching Framework. https://nexmon.org
+
+2. "Matthias Schulz, Francesco Gringoli, Daniel Steinmetzer, Michael
+    Koch and Matthias Hollick. Massive Reactive Smartphone-Based
+    Jamming using Arbitrary Waveforms and Adaptive Power Control.
+    Proceedings of the 10th ACM Conference on Security and Privacy
+    in Wireless and Mobile Networks (WiSec 2017), July 2017.
+
 # How do I run your scripts to rebuild the graphics of the paper?
 
 To run our scripts, you have two options, either you have a MATLAB license
