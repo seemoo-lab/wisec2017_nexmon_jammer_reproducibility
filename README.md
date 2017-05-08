@@ -50,9 +50,12 @@ to a [Monsoon Power Monitor](https://www.msoon.com/LabEquipment/PowerMonitor/).
 At the time of writing the WiSec paper, the power monitor had to be connected
 to a Windows machine to collect the measurements.
 
+The following list shows which files are required to create a certain figure:
+* tssi_g70X_CHX_X0MHz_EXPX.m => Figure 3 and 4
+
 In the following subsections, we explain how every dataset can be collected.
 
-## Generating tssi_g70*_CH*_*0MHz_EXP*.m files
+## Generating tssi_g70X_CHX_X0MHz_EXPX.m files
 
 To generate tssi_g70X_CHX_X0MHz_EXPX.m files used for creating Figures 3 and 4
 of the paper, nexutil is used to call the ioctls with numbers 700 to 705 and 
