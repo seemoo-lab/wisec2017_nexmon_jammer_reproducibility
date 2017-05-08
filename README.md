@@ -32,4 +32,5 @@ export MCR_ROOT=/usr/local/MATLAB/MATLAB_Runtime
 export XAPPLRESDIR=${MCR_ROOT}/v91/X11/app-defaults
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${MCR_ROOT}/v91/runtime/glnxa64:${MCR_ROOT}/v91/bin/glnxa64:${MCR_ROOT}/v91/sys/os/glnxa64:${MCR_ROOT}/v91/sys/opengl/lib/glnxa64
 ```
+   You can do this by executing `source setup_env.sh` in the repository's source directory.
 3. Navigate to the subdirectory of the figure you want to build and execute the `make_figureX` binary.
