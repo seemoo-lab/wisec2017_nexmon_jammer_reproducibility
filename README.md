@@ -99,3 +99,10 @@ adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EX
 adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP1.m
 adb shell su -c "nexutil -g705 -l8196 -r" | strings > tssi_g705_CH106_80MHz_L_EXP2.m
 ```
+
+## Generating the experiment_2.mat file
+
+To create experiment_2.mat, we need to connect one Nexus 5 to a Monsoon Power Monitor
+according to the
+"[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
+manual.
