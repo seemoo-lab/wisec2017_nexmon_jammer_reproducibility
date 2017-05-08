@@ -59,8 +59,7 @@ The following list shows which files are required to create a certain figure:
 * experiment9.00X/S/capture.pcap => Figure 10
 * experiment10.00X/S/capture.pcap => Figure 10
 * experiment11.00X/S/capture.pcap => Figure 10
-* experiment12.0XX/S/capture.pcap => experiment_12_precalculated_results.mat => Figure 11
-* experiment12.0XX/S/capture.pcap => experiment_12_precalculated_results.mat => Figure 12
+* experiment12.0XX/S/capture.pcap => experiment_12_precalculated_results.mat => Figure 11 and 12
 * testjam24MbsL1400wack.iqt => Figure 13
 * experiment12.01X/J/exp12.0XX.csv => Figure 14
 
