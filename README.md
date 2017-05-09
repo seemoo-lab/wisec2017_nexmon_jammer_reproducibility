@@ -80,8 +80,8 @@ The following list shows which files are required to create a certain figure:
 
 ## Preparing the Nexus 5 for energy measurements
 
-Figures 5, 11, 12 and 14 show results of energy measurements. To perform the measurements,
-connect one Nexus 5 to a Monsoon Power Monitor according to the
+Figures 5, 6, 11, 12 and 14 show results of energy measurements. To perform the 
+measurements, connect one Nexus 5 to a Monsoon Power Monitor according to the
 "[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
 manual. To keep the voltage drop over the supply lines low, we intend to keep the 
 drawn current low by setting the supply voltage of the power monitor to 4.2 volts.
