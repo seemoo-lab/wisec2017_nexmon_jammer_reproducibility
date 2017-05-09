@@ -78,6 +78,27 @@ The following list shows which files are required to create a certain figure:
 * testjam24MbsL1400wack.iqt => Figure 13
 * experiment12.01X/J/exp12.0XX.csv => Figure 14
 
+## Preparing the Nexus 5 for energy measurements
+
+Figures 5, 11, 12 and 14 show results of energy measurements. To perform the measurements,
+connect one Nexus 5 to a Monsoon Power Monitor according to the
+"[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
+manual. To keep the voltage drop over the supply lines low, we intend to keep the 
+drawn current low by setting the supply voltage of the power monitor to 4.2 volts.
+During our measurements, we then capture the power consumption as a product of voltage
+and current at a sampling rate of 5 kHz.
+
+Even though we measure the energy consumption of the complete phone in this setup, we
+intend to focus on the energy consumption of the Wi-Fi chip. To be able to measure
+its energy consumption, we turn the phones display off and wait until the main processor
+of the smartphone goes into idle mode. In this mode the energy consumption is almost 
+constantly low, except of periodic peaks every 640 milliseconds. We realized that those 
+peaks can be avoided by turning off the CONFIG_MSM_SMD_PKT setting in the kernel, which 
+disables the LTE related hardware. To rebuild the kernel, we used for our energy
+measurement experiments, you can clone our
+[nexmon_energy_measurement](https://github.com/seemoo-lab/nexmon_energy_measurement)
+repository and build a new boot.img for booting over adb or for flashing.
+
 In the following subsections, we explain how every dataset can be collected.
 
 ## Generating tssi_g70X_CHX_X0MHz_EXPX.m files
@@ -124,29 +145,9 @@ experiment_2 = csvread('experiment_2.csv',2,1);
 save('experiment_2.mat','experiment_2','-v7.3');
 ```
 The experiment_2.csv file itself is an export of the PowerTool (version 4.0.5.2)
-that we used to perform measurements with the Monsoon Power Monitor. After the 
+that we use to perform measurements with the Monsoon Power Monitor. After the 
 conversion we deleted the csv-file as it contains the same raw data as the mat-file 
 but the mat-file has a much smaller file size.
-
-To perform the measurement, connect one Nexus 5 to a Monsoon Power Monitor according 
-to the
-"[Preparation of a Nexus 5 Android Smartphone for Power Analysis](https://www.seemoo.tu-darmstadt.de/fileadmin/user_upload/Group_SEEMOO/mschulz/nexus5_power_analysis.pdf)"
-manual. To keep the voltage drop over the supply lines low, we intend to keep the 
-drawn current low by setting the supply voltage of the power monitor to 4.2 volts.
-During our measurements we then capture the power consumption as a product of voltage
-and current at a sampling rate of 5 kHz. We export the results into the experiment_2.csv
-file mentioned above.
-
-Even though we measure the energy consumption of the complete phone in this setup, we
-intend to focus on the energy consumption of the Wi-Fi chip. To be able to measure
-its energy consumption, we turn the phones display off and wait until the main processor
-of the smartphone goes into idle mode. In this mode the energy consumption is almost 
-constantly low, except of periodic peaks every 640 milliseconds. We realized that those 
-peaks can be avoided by turning off the CONFIG_MSM_SMD_PKT setting in the kernel, which 
-disables the LTE related hardware. To rebuild the kernel we used for our energy
-measurement experiments, you can clone our
-[nexmon_energy_measurement](https://github.com/seemoo-lab/nexmon_energy_measurement)
-repository and build a new boot.img for booting over adb or for flashing.
 
 To start the experiment on the phone, you need to recompile the firmware with the
 additional parameter that sets EXPERIMENT to 2. Therefore, navigate to the 
