@@ -1,3 +1,5 @@
+![NexMon logo](https://github.com/seemoo-lab/nexmon/raw/master/gfx/nexmon.png)
+
 # What does this repository contain?
 
 On the [10th ACM Conference on Security and Privacy in Wireless and Mobile 
@@ -174,3 +176,17 @@ we install the firmware for experiment 1:
 `make clean && make install-firmware EXPERIMENT=1`. Depending on the channel (CHX) and the 
 bandwidth (X0MHz), you have to manually uncomment one of the `set_chanspec` lines in the
 `experiment_1` function of the experiment_1.c file.
+
+# Contact
+
+* [Matthias Schulz](https://seemoo.tu-darmstadt.de/mschulz) <mschulz@seemoo.tu-darmstadt.de>
+* [Francesco Gringoli](http://netweb.ing.unibs.it/~gringoli/) <francesco.gringoli@unibs.it>
+
+# Powered By
+
+## Secure Mobile Networking Lab (SEEMOO)
+<a href="https://www.seemoo.tu-darmstadt.de">![SEEMOO logo](https://github.com/seemoo-lab/nexmon/raw/master/gfx/seemoo.png)</a>
+## Networked Infrastructureless Cooperation for Emergency Response (NICER)
+<a href="https://www.nicer.tu-darmstadt.de">![NICER logo](https://github.com/seemoo-lab/nexmon/raw/master/gfx/nicer.png)</a>
+## Multi-Mechanisms Adaptation for the Future Internet (MAKI)
+<a href="http://www.maki.tu-darmstadt.de/">![MAKI logo](https://github.com/seemoo-lab/nexmon/raw/master/gfx/maki.png)</a>
