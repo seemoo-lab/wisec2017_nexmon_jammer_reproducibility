@@ -101,7 +101,7 @@ repository and build a new boot.img for booting over adb or for flashing.
 
 In the following subsections, we explain how every dataset can be collected.
 
-## Generating tssi_g70X_CHX_X0MHz_EXPX.m files
+## Generating the tssi_g70X_CHX_X0MHz_EXPX.m files
 
 To generate tssi_g70X_CHX_X0MHz_EXPX.m files used for creating Figures 3 and 4
 of the paper, nexutil is used to call the ioctls with numbers 700 to 705 and 
@@ -165,3 +165,11 @@ power consumption. As soon as the experiments start on the phone you can see a r
 in power consumption. After all experiments are done, stop the capture and export the
 data as csv-file so that it can be read by MATLAB to produce the mat-file, as described
 above.
+
+## Generating the experiment_1_CHX_X0MHz.mat files
+
+The procedure for generating the experiment_1_CHX_X0MHz.mat files is similar to generating
+the experiment_2.mat file. However, instead of installing the firmware for experiment 2, 
+we install the firmware for experiment 1. Depending on the channel (CHX) and the bandwidth
+(X0MHz), you have to manually uncomment one of the `set_chanspec` lines in the
+`experiment_1` function of the experiment_1.c file.
