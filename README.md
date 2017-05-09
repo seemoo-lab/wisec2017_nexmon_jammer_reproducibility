@@ -170,6 +170,7 @@ above.
 
 The procedure for generating the experiment_1_CHX_X0MHz.mat files is similar to generating
 the experiment_2.mat file. However, instead of installing the firmware for experiment 2, 
-we install the firmware for experiment 1. Depending on the channel (CHX) and the bandwidth
-(X0MHz), you have to manually uncomment one of the `set_chanspec` lines in the
+we install the firmware for experiment 1: 
+`make clean && make install-firmware EXPERIMENT=1`. Depending on the channel (CHX) and the 
+bandwidth (X0MHz), you have to manually uncomment one of the `set_chanspec` lines in the
 `experiment_1` function of the experiment_1.c file.
