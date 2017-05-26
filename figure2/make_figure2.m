@@ -58,7 +58,7 @@
 
 function make_figure2()
     normsig = @(sig) sig./max(max(real(sig)),max(imag(sig)));
-    paprdB = @(s) 10*log10(max(abs(s))^2/rms(s));
+    paprdB = @(s) 10*log10(max(abs(s))^2/rms(s)^2);
     powerdB = @(s) 10*log10(rms(s)^2);
 
     tone1freq = zeros(160,1);
