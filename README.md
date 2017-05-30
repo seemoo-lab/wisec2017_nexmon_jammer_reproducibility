@@ -177,6 +177,35 @@ we install the firmware for experiment 1:
 bandwidth (X0MHz), you have to manually uncomment one of the `set_chanspec` lines in the
 `experiment_1` function of the experiment_1.c file.
 
+## Generating the experimentX.0XX/S/capture.pcap files
+
+To generate the pcap files, one needs four Nexus 5 smartphones that are placed as illustrated
+in Figure 8 of our WiSec paper. Instead of connecting the phones to a Raspberry Pi and then
+remotely accessing the adb server on the Raspberry Pi, the phones can directly be connected to
+the controlling laptop. To reference the four nodes: jammer (J), transmitter next to the wall (W),
+transmitter facing the room (R) and receiver (S), we use the variable `NODE` in the Makefile. It
+is mainly used to differentiate the device ids that need to be setup in the `Makefile` by setting
+the corresponding `ADBSERIAL` variables to the values presented by `adb devices`.
+
+To manage the experiments, we use additional makefiles called Makefile.expX, where X is 4, 9, 10,
+11 or 12. To start each experiment, you need to execute `make -f Makefile.expX` and wait until
+all experiments belong to a set are done.
+
+## Generating the experiment12.01X/J/exp12.0XX.csv files
+
+In parallel to running `Makefile.exp12` to create the pcap files, you should connect a Monsoon
+Power Monitor to the jamming smartphone. During experiments 12.011, 12.012 and 12.013, the makefile
+instructs you to `START` or `STOP` the power monitor and then press enter. Before starting or
+stopping, the makefile configures the jammer as during the operation of the power monitor, the 
+adb connection to the phone is cut. Before pressing enter after starting the power monitor, you should
+manually turn of the screen of the jamming node by pressing the power button to reduce the time until
+the smartphone's main processor enters sleep mode. After stopping the power monitor, you should save
+the corresponding csv file.
+
+## Generating the testjam24MbsL1400wack.iqt file
+
+
+
 # Contact
 
 * [Matthias Schulz](https://seemoo.tu-darmstadt.de/mschulz) <mschulz@seemoo.tu-darmstadt.de>
