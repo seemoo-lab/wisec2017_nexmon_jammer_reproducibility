@@ -204,7 +204,11 @@ the corresponding csv file.
 
 ## Generating the testjam24MbsL1400wack.iqt file
 
-
+The testjam24MbsL1400wack.iqt file is the result of jamming a transmission of 1400 byte long frames
+transmitted at a rate of 24 Mbps with the acknowledging jammer. The file itself was captured with
+a Tektronix RSA3408A. To produce similar results, you can simply use any oscilloscope with at least
+40 MHz bandwidth and operation in the 2.4 or 5 GHz bands and run it in parallel to the experiments
+for capturing the pcap files.
 
 # Contact
 
