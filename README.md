@@ -210,6 +210,13 @@ a Tektronix RSA3408A. To produce similar results, you can simply use any oscillo
 40 MHz bandwidth and operation in the 2.4 or 5 GHz bands and run it in parallel to the experiments
 for capturing the pcap files.
 
+# References
+
+* Matthias Schulz, Francesco Gringoli, Daniel Steinmetzer, Michael Koch and Matthias Hollick. **Massive Reactive Smartphone-Based Jamming using Arbitrary Waveforms and Adaptive Power Control**. Proceedings of the *10th ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec 2017)*, July 2017.
+* Matthias Schulz, Daniel Wegemer and Matthias Hollick. **Nexmon: The C-based Firmware Patching Framework**. https://nexmon.org
+
+[Get references as bibtex file](https://nexmon.org/bib)
+
 # Contact
 
 * [Matthias Schulz](https://seemoo.tu-darmstadt.de/mschulz) <mschulz@seemoo.tu-darmstadt.de>
